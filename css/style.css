@@ -1,0 +1,40 @@
+*  {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.main-wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.lista-for {
+  width: 500px;
+  height: 750px;
+  background-image: url(../blackboard.jpg);
+  background-size: contain;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.output-ciclofor {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
