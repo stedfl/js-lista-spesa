@@ -5,29 +5,37 @@
 }
 
 body {
-  font-family: 'Fuzzy Bubbles', cursive;
+  background-image: url(img/wood.webp);
+  background-size: cover;
 }
 
 .main-wrapper {
+  padding: 3rem;
   width: 70%;
   margin: 0 auto;
+  display: flex;
+  justify-content:space-around;
 }
 
-.lista-for {
-  width: 500px;
-  height: 750px;
-  background-image: url(../blackboard.jpg);
-  background-size: contain;
-  color: white;
+.lista {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.output-ciclofor {
-  list-style: none;
+.lista.for {
+  width: 500px;
+  height: 750px;
+  background-image: url(img/blackboard.jpg);
+  background-size: contain;
+  color: white;
+  font-family: 'Fuzzy Bubbles', cursive;
   font-size: 1.5rem;
+}
+
+.output {
+  list-style: none;
 }
 
 h2 {
@@ -36,5 +44,33 @@ h2 {
 }
 
 li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.lista.while {
+  width: 500px;
+  height: 750px;
+  background-image: url(img/notebook.webp);
+  background-size: contain;
+  font-family: 'Caveat', cursive;
+  font-size: 1.3rem;
+}
+
+ul.ciclowhile {
+  transform: rotate(-15deg);
+  list-style: none;
+}
+
+.lista.while h2 {
+  transform: rotate(-5deg);
+}
+ 
+@media screen and (max-width: 900px) {
+  .main-wrapper {
+    flex-direction: column;
+  }
+
+  .lista.for {
+    margin-bottom: 5rem;
+  }
 }
