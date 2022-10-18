@@ -47,6 +47,10 @@ li {
   margin-bottom: 0.6rem;
 }
 
+.wrong {
+  text-decoration: line-through;
+}
+
 .lista.while {
   width: 500px;
   height: 750px;
